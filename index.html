@@ -1,8 +1,58 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      font-family: 'Press Start 2P', Arial, sans-serif;
+    }
+
+    .bug-screen {
+      background-color: #000;
+      color: #fff;
+      padding: 30px;
+      border: 4px solid #0f0; /* green retro border */
+      border-radius: 12px;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 0 20px #0f0;
+      line-height: 1.5;
+    }
+
+    .bug-screen h1 {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .bug-screen h2 {
+      font-size: 14px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .bug-screen ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .bug-screen li {
+      margin-bottom: 10px;
+    }
+
+    .bug-screen li::before {
+      content: "▶ "; /* little retro arrow */
+      color: #0f0;
+    }
+  </style>
 </head>
 <body>
-  <div style="background-color: black; color: white; padding: 20px; border-radius: 8px; font-family: 'Press Start 2P', Arial, sans-serif;">
+  <div class="bug-screen">
     <h1>Echo Shift</h1>
     <h2>Welcome to Echo Shift Bug Fixes!</h2>
     <p>It’s a place where you can go if you find bugs in the game. Check below for a list of bug fixes:</p>
